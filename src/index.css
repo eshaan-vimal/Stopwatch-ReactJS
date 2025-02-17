@@ -1,0 +1,120 @@
+#root
+{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: hsla(0, 0%, 2%, 0.864);
+}
+
+.pageTitle
+{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: whitesmoke;
+  font-size: 5em;
+  font-style: italic;
+}
+
+.watchContainer
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  border-radius: 35px;
+  box-shadow: 0px 0px 20px rgba(200, 173, 255, 0.89);
+  background-color: rgba(137, 253, 253, 0.874);
+}
+
+.watchLabel
+{
+  margin: 0px 20px;
+  font-size: 8.5em;
+  font-family: monospace;
+}
+
+.lapsContainer
+{
+  margin-bottom: 30px;
+  list-style-position: inside;
+  max-height: 160px;
+  width: 100%;
+  overflow: auto;
+  font-family: monospace;
+}
+
+.lapTime
+{
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+
+.watchButtons
+{
+  margin: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px;
+  font-size: 3em;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+#startButton
+{
+  background-color: hsla(131, 98%, 68%, 0.93);
+}
+#startButton:hover
+{
+  box-shadow: none;
+  background-color: hsla(131, 98%, 48%, 0.93);
+}
+
+#stopButton
+{
+  background-color: hsla(0, 100%, 62%, 0.93);
+}
+#stopButton:hover
+{
+  box-shadow: none;
+  background-color: hsla(0, 100%, 52%, 0.93);
+}
+
+#resetButton
+{
+  background-color: hsla(64, 100%, 72%, 0.93);
+}
+#resetButton:hover
+{
+  box-shadow: none;
+  background-color: hsla(64, 100%, 54%, 0.93);
+}
+
+#lapButton
+{
+  background-color: hsla(0, 0%, 15%, 0.93);
+  color: whitesmoke;
+}
+#lapButton:hover
+{
+  box-shadow: none;
+  background-color: black;
+}
